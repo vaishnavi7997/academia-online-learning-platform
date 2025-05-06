@@ -1,0 +1,234 @@
+.coursesCard {
+    padding: 50px 0;
+    background-color: #f5f7fa;
+  }
+  
+  .coursesCard .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .coursesCard .items {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .coursesCard .items:hover {
+    transform: translateY(-5px);
+  }
+  
+  .coursesCard .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .coursesCard .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .coursesCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .coursesCard .text {
+    flex: 1;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .coursesCard .text h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .coursesCard .rate {
+    margin: 10px 0;
+    color: #1eb2a6;
+  }
+  
+  .coursesCard .rate i {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  
+  .coursesCard .rate label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .coursesCard .details {
+    margin-top: 10px;
+  }
+  
+  .coursesCard .details .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .coursesCard .details .dimg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .coursesCard .details .para h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .coursesCard .details span {
+    display: block;
+    color: #1eb2a6;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  
+  .coursesCard .price {
+    margin: 20px 0;
+    background-color: #f8f8f8;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .coursesCard h3 {
+    font-weight: 600;
+    color: #1eb2a6;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .coursesCard .outline-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid #1eb2a6;
+    background-color: transparent;
+    color: #1eb2a6;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .coursesCard .outline-btn:hover {
+    background-color: #1eb2a6;
+    color: #fff;
+  }
+  
+  .online {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .online .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    padding: 30px 20px;
+    transition: 0.5s;
+    border-radius: 8px;
+  }
+  
+  .online .img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .online img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .online h1 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px 0;
+    line-height: 24px;
+  }
+  
+  .online span {
+    background-color: #f8f8f8;
+    padding: 5px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #1eb2a6;
+    border-radius: 5px;
+  }
+  
+  .online .box .show {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .online .box:hover {
+    background-color: #1eb2a6;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .online .box:hover .show {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .online .box:hover h1 {
+    color: #fff;
+  }
+  
+ 
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .grid3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid3 {
+      grid-template-columns: 1fr;
+    }
+  
+    .online h1 {
+      font-size: 14px;
+    }
+  
+    .online .img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .online span {
+      font-size: 11px;
+      padding: 4px 16px;
+    }
+  }

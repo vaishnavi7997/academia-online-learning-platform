@@ -1,0 +1,80 @@
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .items {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .items:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .blog .img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog .text {
+    padding: 20px;
+  }
+  
+  .blog h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 15px 0;
+    transition: 0.3s;
+  }
+  
+  .blog h1:hover {
+    color: #1eb2a6;
+    cursor: pointer;
+  }
+  
+  .blog span {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1eb2a6;
+  }
+  
+  .blog span label {
+    margin-left: 8px;
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .blog span:nth-last-child(1) label {
+    color: #1eb2a6;
+  }
+  
+  .blog p {
+    color: grey;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .grid2{
+     margin-top: 80%;
+     background-color: #f9f9f9; 
+    }
+    .blog .img img {
+      height: 180px;
+    }
+    .blog h1 {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .blog .text {
+      padding: 15px;
+    }
+  }
+  
